@@ -4,17 +4,9 @@
         <servlet-name>test</servlet-name>
         <servlet-class>com.mycompany.deployapliccation.test</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>NewServlet</servlet-name>
-        <servlet-class>com.mycompany.deployapliccation.NewServlet</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
-        <url-pattern>/test</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>NewServlet</servlet-name>
-        <url-pattern>/NewServlet</url-pattern>
+        <url-pattern>/reg</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
