@@ -10,8 +10,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jakartaee>10.0.0</jakartaee>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
     </properties>
     
     <dependencies>
@@ -28,11 +26,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <!-- Update to a version that supports JDK 11 and later -->
-                <version>3.11.0</version>
+                <version>3.8.1</version>
                 <configuration>
-                    <!-- Remove source and target configuration -->
-                    <!-- These settings will be inferred from maven.compiler.source and maven.compiler.target properties -->
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
