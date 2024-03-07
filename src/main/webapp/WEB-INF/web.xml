@@ -4,9 +4,25 @@
         <servlet-name>test</servlet-name>
         <servlet-class>com.mycompany.deployapliccation.test</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>com.mycompany.deployapliccation.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginLervlet</servlet-name>
+        <servlet-class>com.mycompany.deployapliccation.LoginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
         <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/RegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginLervlet</servlet-name>
+        <url-pattern>/LoginLervlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
