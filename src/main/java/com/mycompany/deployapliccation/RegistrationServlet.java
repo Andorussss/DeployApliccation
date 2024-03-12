@@ -20,8 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 public class RegistrationServlet extends HttpServlet {
 
   private static final String JDBC_URL = "jdbc:postgresql://ec2-44-213-151-75.compute-1.amazonaws.com:5432/d4te06e7baa8e1";
-private static final String JDBC_USER = "mbiptjqcrrsbse";
-private static final String JDBC_PASSWORD = "f47144460627c3aae9c00577fe241a4c5945349b1161b5d7a3c00b3620e4d8e4";
+  private static final String JDBC_USER = "mbiptjqcrrsbse";
+  private static final String JDBC_PASSWORD = "f47144460627c3aae9c00577fe241a4c5945349b1161b5d7a3c00b3620e4d8e4";
 
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -119,19 +119,15 @@ private static final String JDBC_PASSWORD = "f47144460627c3aae9c00577fe241a4c594
             statement.setString(3, email);
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
-                // If the user is successfully registered, return true
                 return true;
             } else {
-                // If no rows were inserted, something went wrong
-                // In this case, return false and print an error message
                 System.out.println("Error: Failed to register the user.");
                 return false;
             }
         }
     } catch (SQLException e) {
-        // If an SQL exception occurs, print an error message
         System.out.println("SQL Error registering user:");
-        e.printStackTrace(); // Print stack trace for debugging
+        e.printStackTrace(); 
         return false;
     }
 }

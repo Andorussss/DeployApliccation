@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class LoginServlet extends HttpServlet {
 
-     private static final String JDBC_URL = "jdbc:postgresql://ec2-44-213-151-75.compute-1.amazonaws.com:5432/d4te06e7baa8e1";
+    private static final String JDBC_URL = "jdbc:postgresql://ec2-44-213-151-75.compute-1.amazonaws.com:5432/d4te06e7baa8e1";
     private static final String JDBC_USER = "mbiptjqcrrsbse";
     private static final String JDBC_PASSWORD = "f47144460627c3aae9c00577fe241a4c5945349b1161b5d7a3c00b3620e4d8e4";
  
@@ -52,7 +52,6 @@ public class LoginServlet extends HttpServlet {
             out.println("<h2>Login successful!</h2>");
             out.println("<p>Welcome, " + username + "!</p>");
             out.println("</body></html>");
-            response.sendRedirect("login.html");
         } else {
             out.println("<html><body>");
             out.println("<h2>Login failed!</h2>");
